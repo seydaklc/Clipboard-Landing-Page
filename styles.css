@@ -111,6 +111,10 @@ footer {
 .small-logo {
   transform: scale(0.5);
 }
+a:active { 
+  position: relative;
+  top: 1px;
+}
 @media (min-width: 62.5em) {
   html {
     min-height: 100vh;
