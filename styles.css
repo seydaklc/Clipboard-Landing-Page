@@ -88,6 +88,11 @@ ul li {
   text-align: center;
   line-height: 2.5em;
   color: hsl(210, 10%, 33%);
+  
+}
+.qa li:hover {
+  color: hsl(171, 66%, 44%);
+  cursor: pointer;
 }
 .sm-logo {
   display: flex;
