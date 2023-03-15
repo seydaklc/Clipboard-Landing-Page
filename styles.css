@@ -1,0 +1,211 @@
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  background-image: url(bg-header-mobile.png);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.875em;
+  margin-top: 6.25em;
+}
+h1 {
+  text-align: center;
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+}
+p {
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+  line-height: 1.5em;
+}
+main a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 1em;
+  width: 90%;
+  color: white;
+  font-weight: 600;
+}
+.first-link {
+  border: 1px solid hsl(171, 66%, 44%);
+  background-color: hsl(171, 66%, 44%);
+  margin: 1.875em auto 1.25em auto;
+  box-shadow: inset 0 -0.625em 0.625em -0.625em hsl(171, 55%, 16%);
+}
+.second-link {
+  border: 1px solid hsl(233, 100%, 69%);
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: inset 0 -0.625em 0.625em -0.625em hsl(234, 43%, 34%);
+}
+.side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  width: 100%;
+  height: 100%;
+  margin: 3.125em auto;
+}
+h2 {
+  font-size: 1.5rem;
+  color: hsl(210, 10%, 33%);
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+.bottom div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.25em;
+}
+.logos {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  width: 50%;
+  height: 50%;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  margin: 0.625em;
+  text-align: center;
+  line-height: 2.5em;
+  color: hsl(210, 10%, 33%);
+}
+.sm-logo {
+  display: flex;
+  justify-content: space-around;
+}
+footer {
+  background-color: #faf9f6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.attribution {
+  margin-top: 3.125em;
+}
+.small-logo {
+  transform: scale(0.5);
+}
+@media (min-width: 62.5em) {
+  html {
+    min-height: 100vh;
+  }
+  body {
+    background-image: url(bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100% 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+    width: 100%;
+  }
+  .links {
+    display: flex;
+    width: 50%;
+  }
+  .links a {
+    margin: 1.875em 0.625em;
+  }
+
+  .side p {
+    text-align: left;
+    font-size: 1.125rem;
+  }
+  .mid {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -11.25em;
+  }
+  .mid img {
+    transform: scale(0.8);
+  }
+  .side {
+    position: relative;
+    top: -3.4375em;
+  }
+  .device {
+    transform: scale(0.7);
+  }
+  .bottom div {
+    display: flex;
+    padding: 2.5em;
+  }
+  .bottom {
+    flex-direction: row;
+    width: 80%;
+  }
+  .logos {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+  }
+  .logos img {
+    margin: 1.875em;
+  }
+  .last {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .gr-logo {
+    display: flex;
+    flex-basis: 10%;
+  }
+  .qa {
+    display: flex;
+    flex-basis: 50%;
+  }
+  .qa ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 1.25em;
+  }
+  .item2 {
+    grid-area: 2/1/2/2;
+  }
+  .item4 {
+    grid-area: 2/2/2/2;
+  }
+
+  .qa li {
+    text-align: left;
+    font-weight: 400;
+  }
+  .sm-logo {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: space-around;
+  }
+  h1 + p {
+    font-size: 1.25rem;
+    padding: 0 18.75em;
+  }
+}
